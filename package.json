@@ -1,0 +1,20 @@
+{
+  "name": "miles_morales",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000L\u0000P\u0000_\u0000M\u0000i\u0000l\u0000e\u0000s\u0000_\u0000M\u0000o\u0000r\u0000a\u0000l\u0000e\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.63.6"
+  }
+}

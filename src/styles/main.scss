@@ -1,20 +1,51 @@
 @use 'variaveis';
 @use 'hero';
+@use 'header';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Komitite, sans-serif;
-
+    font-family: 'Bangers', cursive;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
 }
 
 body {
     background-color: variaveis.$corPrimaria;
 }
 
-@font-face {
-    font-family: Komitite;
-    src: url(../../assets/fonts/KOMTITE_.ttf);
-    font-weight: bold;
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    background-color: variaveis.$btnPrimario;
+    color: #fff;
+    border: 1px solid variaveis.$corPrimaria;
+    
+    &:hover {
+        background-color: darken(variaveis.$btnPrimario, 15);
+    }
 }
+
+    .reflection-text {
+        font-size: 24px;
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+
+
+
+
+
+
+

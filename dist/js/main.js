@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".header__mobile");const t=document.querySelector(".header__nav");e.addEventListener("click",function(){t.classList.toggle("header__nav--is-active")})});

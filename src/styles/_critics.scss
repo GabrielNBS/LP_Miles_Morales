@@ -1,0 +1,36 @@
+.critics {
+    padding: 5.4vw;
+
+    @media (max-width: 768px) {
+        padding-top: 20vh;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__icon {}
+
+        &__text {
+            text-align: center;
+            max-width: 640px;
+            width: 100%;
+            font-size: 24px;
+            border-left: 3px solid rgba(255, 0, 0, .8);
+            padding-left: 2vw;
+            margin-top: 4vh;
+
+            @media (max-width: 768px) {
+                p {
+                    font-size: 16px;
+                }
+            }
+            
+
+            p {
+                padding-bottom: 1vh;
+            }
+        }
+    }
+}

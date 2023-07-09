@@ -4,6 +4,9 @@
 @use 'sinopse';
 @use 'authors';
 @use 'gallery';
+@use 'trailers';
+@use 'critics';
+@use 'footer';
 
 * {
     margin: 0;
@@ -13,6 +16,7 @@
     text-decoration: none;
     list-style: none;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,12 +34,21 @@ body {
     border-radius: 4px;
     padding: 8px 14px;
     letter-spacing: 1px;
-    background-color: variaveis.$btnPrimario;
+    background-color: transparent;
     color: #fff;
-    border: 1px solid variaveis.$corPrimaria;
+    border: 1px solid transparent;
     
     &:hover {
-        background-color: darken(variaveis.$btnPrimario, 15);
+        border-bottom: 2px solid #ff0000;
+    }
+
+    @media (max-width: 768px) {
+        background-color: variaveis.$btnPrimario;
+
+        &:hover {
+            border: none;
+            background-color: darken(variaveis.$btnPrimario, 10);
+        }
     }
 }
 
@@ -58,14 +71,30 @@ body {
     margin: 0 auto;
 }
 
-.bi-twitter, .bi-instagram {
+.bi-twitter, .bi-instagram, .fab {
         font-size: 32px;
         transition: all .2s ease;
 }
 
-.bi-twitter:hover, .bi-instagram:hover {
+.bi-twitter:hover, .bi-instagram:hover, .fab:hover {
     color: variaveis.$corSecundaria;
 }
+
+.bi-star-fill {
+    color: #daa520;
+    padding: 0.5vw;
+    font-size: 48px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+.fa-spider {
+    font-size: 32px;
+}
+
+
 
 
 

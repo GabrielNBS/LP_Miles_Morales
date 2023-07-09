@@ -17,20 +17,22 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <h1 class="reflection-text">Teste</h1>
+            <h1 class="reflection-text"><i class="fa-solid fa-spider"></i></h1>
             <button class="header__mobile">
-                <img class="header__mobile__icon" src="./images/icons/aranha.png" alt="aranha">
+                <div class="header__hamburguer"></div>
+                <div class="header__hamburguer"></div>
+                <div class="header__hamburguer"></div>
             </button>
             <nav class="header__nav">
                 <ul class="header__nav__link">
                     <li class="header__nav__link__item">
-                        <a class="btn" href="#">Teaser</a>
+                        <a class="btn" href="#nav-trailers">Teaser</a>
                     </li>
                     <li class="header__nav__link__item">
-                        <a class="btn" href="#">Sinopse</a>
+                        <a class="btn" href="#nav-gallery">Galeria</a>
                     </li>
                     <li class="header__nav__link__item">
-                        <a class="btn" href="#">Avaliações</a>
+                        <a class="btn" href="#nav-critics">Avaliações</a>
                     </li>
                 </ul>
             </nav>
@@ -62,6 +64,24 @@
             </div>
         </div>
     </section>
+    <section id="nav-trailers" class="trailers">
+        <div class="trailers__content">
+            <div class="trailers__video">
+                <h2 class="reflection-title">Trailer 1</h2>
+                <video class="trailers__video__background" controls>
+                    <source src="./video/Trailer1.mp4" type="video/mp4" title="Spider Man através do Aranhaverso">
+                    Seu navegador não suporta a reprodução de video.
+                </video>
+            </div>
+            <div class="trailers__video">
+                <h2 class="reflection-title">Trailer 2</h2>
+                <video class="trailers__video__background" controls>
+                    <source src="./video/trailer2.mp4" type="video/mp4" title="Spider Man através do Aranhaverso">
+                    Seu navegador não suporta a reprodução de video.
+                </video>
+            </div>
+        </div>
+    </section>
     <section class="authors">
         <h2 class="reflection-title">Diretores</h2>
         <div class="authors__content">
@@ -82,7 +102,8 @@
                             <a href="https://twitter.com/JDS_247" target="_blank"><i class="bi bi-twitter"></i></a>
                         </li>
                         <li class="authors__social-media__link">
-                            <a href="https://www.instagram.com/jds_77/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/jds_77/" target="_blank"><i
+                                    class="bi bi-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -100,10 +121,12 @@
                 <div class="authors__card__social-media">
                     <ul class="authors__card__item">
                         <li class="authors__card__item__link">
-                            <a href="https://twitter.com/shinypinkbottle" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="https://twitter.com/shinypinkbottle" target="_blank"><i
+                                    class="bi bi-twitter"></i></a>
                         </li>
                         <li class="authors__social-media__link">
-                            <a href="https://www.instagram.com/shinypinkbottle/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/shinypinkbottle/" target="_blank"><i
+                                    class="bi bi-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -125,40 +148,165 @@
                             <a href="https://twitter.com/Powerkeni" target="_blank"><i class="bi bi-twitter"></i></a>
                         </li>
                         <li class="authors__social-media__link">
-                            <a href="https://www.instagram.com/kemppowers/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/kemppowers/" target="_blank"><i
+                                    class="bi bi-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section id="nav-gallery" class="gallery">
         <div class="gallery__content">
             <div class="gallery__content__img">
-                <img src="./images/gallery/Gwen_spider.jpeg" alt="Spider-gwen">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Shameik Moore</h5>
+                        <p>"Miles Morales"</p>
+                    </div>
+                </div>
             </div>
             <div class="gallery__content__img">
-                <img src="./images/gallery/spider_man_2099.jpeg" alt="Spider-man 2099">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Hailee Steinfeld</h5>
+                        <p>"Gwen Stacy / Spider-gwen"</p>
+                    </div>
+                </div>
             </div>
             <div class="gallery__content__img">
-                <img src="./images/gallery/spider_punk.jpeg" alt="Spider-punk">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Oscar Isaac</h5>
+                        <p>"Miguel o'hara / Spider-man 2099"</p>
+                    </div>
+                </div>
             </div>
             <div class="gallery__content__img">
-                <img src="./images/gallery/Spider_woman.jpeg" alt="Spider-woman">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Daniel Kaluuya</h5>
+                        <p>"hobie / Spider-punk"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__content__img">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Issa Rae</h5>
+                        <p>"Jessica Drew / Spider-woman"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__content__img">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Karan Soni</h5>
+                        <p>"Pavitr Prabhakar"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__content__img">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Jake Johnson (xvi)</h5>
+                        <p>"May /Mayday Parker "</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__content__img">
+                <div class="gallery__content__img__container">
+                    <div class="gallery__content__img__actors">
+                    </div>
+                    <div class="gallery__content__img__text">
+                        <h5>Jason Schwartzman</h5>
+                        <p>"The Spot"</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="actors">
-        <div class="actors__content">
-            <div class="actors__list">
-                <ul class="actors__list__item">
-                    <li class="actors__list__item__link">
-                        <img src=".//images/atores_atrizes/Daniel_Kaluuya-hobart-brown.jpg" alt="Daniel Kaluuya">
-                    </li>
+    <section id="nav-critics" class="critics">
+        <div class="critics__content">
+            <div class="critics__content__star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="critics__content__text">
+                <p class="reflection-text">
+                    A aguardada sequência do filme de 2018 Homem-Aranha no Aranhaverso está prestes a chegar às telonas,
+                    e a crítica especializada já está elogiando o filme. Homem-Aranha: Através do Aranhaverso parece
+                    estar no caminho certo, com alguns críticos aclamando o filme como uma “obra-prima”, e até mesmo
+                    como o melhor filme de herói já feito.
+                </p>
+                <p class="reflection-text">
+                    Segundo Charles Pulliam-Moore do The Verge, Aranhaverso 2 mantém a excelência do seu predecessor e
+                    leva a franquia a um nível ainda mais alto. O filme continua a explorar o multiverso de forma
+                    fascinante, apresentando uma trama emocionante e personagens cativantes.
+                </p>
+                <p class="reflection-text">
+                    Além disso, ele afirma que animação impressionante e os efeitos visuais deslumbrantes chamam a
+                    atenção. O crítico ainda destaca a habilidade dos diretores em equilibrar a ação intensa com
+                    momentos emocionantes, resultando em uma experiência cinematográfica envolvente.
+                </p>
+                <p class="reflection-text">
+                    Por sua vez, Ross Bonaime do Collider afirma que Aranhaverso 2 supera as expectativas e se
+                    estabelece como uma referência no gênero de filmes de heróis. Ele ressalta a capacidade do filme de
+                    incorporar ainda mais personagens do universo do Homem-Aranha, sem se tornar excessivamente
+                    complexo.
+                </p>
+                <p class="reflection-text">
+                    Segundo o crítico, a trama envolvente, a conexão poderosa com os personagens e suas relações, bem
+                    como a animação deslumbrante, tornam o filme um dos mais emocionantes e surpreendentes dos últimos
+                    anos. Além disso, ele faz uma afirmação forte, dizendo que ao final de Aranhaverso 2, a questão
+                    sobre quem é o melhor Homem-Aranha do cinema é respondida: é Miles Morales. Bonaime diz que o filme
+                    consolida Aranhaverso como a melhor série de filmes de super-heróis até o momento.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo reflection-text">
+                <h4>Spideverse is Coming</h4>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links__list">
+                    <li class="footer__links__item reflection-text"><a href="#">Termos de uso</a></li>
+                    <li class="footer__links__item reflection-text"><a href="#">Política de privacidade</a></li>
+                    <li class="footer__links__item reflection-text"><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__social__list">
+                    <li class="footer__social__item"><a href="https://github.com/GabrielNBS" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="footer__social__item"><a href="https://www.linkedin.com/in/gabrielnascimento-dev/" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
-    </section>
+        <div class="footer__credits">
+            <p>Todos os direitos reservados &copy; 2023 Homem-Aranha. Desenvolvido por Seu Nome</p>
+        </div>
+    </footer>
+    
+
 
     <script src="../dist/js/main.js"></script>
     <script src="https://kit.fontawesome.com/281e9d8d50.js" crossorigin="anonymous"></script>

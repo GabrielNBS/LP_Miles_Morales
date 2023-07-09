@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
     headerMobileMenu.addEventListener('click', function() {
         navMenu.classList.toggle('header__nav--is-active')
     })
+
 })

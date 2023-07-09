@@ -9,6 +9,10 @@
         h2 {
             font-size: 64px;
             text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 48px;
+            }
         }
 
         &__text {
@@ -20,6 +24,10 @@
             margin: 0 auto;
             border-left: 3px solid rgba(255, 0, 0, .8);
             padding-left: 2vw;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
         
     }

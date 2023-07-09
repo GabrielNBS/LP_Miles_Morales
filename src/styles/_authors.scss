@@ -3,9 +3,16 @@
 .authors {
     padding: 5.4vw;
 
+    h2 {
+        text-align: center;
+        font-size: 64px;
+        padding-bottom: 5vh;
+    }
+
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 3vw;
     }
 
     &__card {
@@ -19,6 +26,7 @@
         box-shadow:
         10px 10px 15px variaveis.$sombraPrimaria, 
         15px 15px 15px variaveis.$sombraSecundaria;
+        transition: all .4s ease-in-out;
 
         &:nth-child(1) &__picture {
             background-image: url(../images/diretores/Joaquim\ _dos_Santos.jpg);
@@ -30,6 +38,13 @@
 
         &:nth-child(3) &__picture {
             background-image: url(../images/diretores/Kemp_Powers.jpg);
+        }
+
+        &:hover {
+            transform: translateY(-15px);
+            box-shadow:
+            0 25px 20px variaveis.$sombraPrimaria, 
+            0 30px 20px variaveis.$sombraSecundaria;
         }
         
 

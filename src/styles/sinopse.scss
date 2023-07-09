@@ -1,0 +1,24 @@
+.sinopse {
+    padding: 5.4vw;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4vh;
+
+        h2 {
+            font-size: 64px;
+            text-align: center;
+        }
+
+        &__text {
+            max-width: 640px;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            margin: 0 auto;
+        }
+        
+    }
+}

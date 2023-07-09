@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+.authors {
+    padding: 5.4vw;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__card {
+        width: 100%;
+        height: 600px;
+        background-color: lighten(variaveis.$corPrimaria, 5%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow:
+        10px 10px 15px variaveis.$sombraPrimaria, 
+        15px 15px 15px variaveis.$sombraSecundaria;
+
+        &:nth-child(1) &__picture {
+            background-image: url(../images/diretores/Joaquim\ _dos_Santos.jpg);
+        }
+
+        &:nth-child(2) &__picture {
+            background-image: url(../images/diretores/Justin_Thompson.jpg);
+        }
+
+        &:nth-child(3) &__picture {
+            background-image: url(../images/diretores/Kemp_Powers.jpg);
+        }
+        
+
+        &__picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: bisque;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 25px 0;
+        }
+        
+        &__text {
+            max-width: 90%;
+            text-align: center;
+
+            h5 {
+                font-size: 32px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.gallery {
+    width: 100%;
+    background-color: variaveis.$corSecundaria;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__img {
+            
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                opacity: .5;
+                transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) .1s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
